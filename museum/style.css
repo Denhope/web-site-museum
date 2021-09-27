@@ -1,5 +1,5 @@
 body{
-    
+    width: 1920px;
 }
 
 @font-face {
@@ -123,6 +123,7 @@ body{
     left: 0px;
     top: 150px;
     border-radius: 0px;
+    
         
   }
   .foto-frame{
@@ -294,7 +295,6 @@ body{
     .spare-video{
         display: flex;
         justify-content: space-between;
-
     }
     
 
