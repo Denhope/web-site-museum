@@ -1,5 +1,6 @@
 body{
-    width: 1920px;
+    /* width: 1920px; */
+   margin: auto;
 }
 
 @font-face {
@@ -295,6 +296,11 @@ body{
     .spare-video{
         display: flex;
         justify-content: space-between;
+    }
+    .video-slider{
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
     }
     
 
