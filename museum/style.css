@@ -1,5 +1,6 @@
 body{
-    width: 1920px;
+    /* width: 1920px; */
+   margin: auto;
 }
 
 @font-face {
@@ -113,7 +114,7 @@ body{
   }
 
    
-  .welcome-section{
+  .welcome-section {
       background-color: black;
   }
   .welcome-frame{
@@ -296,6 +297,26 @@ body{
         display: flex;
         justify-content: space-between;
     }
-    
+    .video-slider{
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    .art__gallery__frame{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .gallery-section{
+        background-color: black;
+    }
+    .gallery-section .section-title{
+        color: rgb(250, 245, 245);
+        padding-top:35px; ;
+    }
+    .gallery-contanier {
+        
+    }
 
  
