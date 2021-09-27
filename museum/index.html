@@ -7,58 +7,172 @@
     <title>museum</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
 
 </head>
-<body>
+<body>   
     <header class="header">
-        <div class="container">
-            <div class="Logo">
-                <div class="continer">
-
-                </div>
+        <div class="contanier header__container">
+            <div class="header-logo">   
+                <div class="header-logo-vector"><h2 class="header-logo-text ">Louvre</h2></div>           
+                
             </div>
-            <div class="navigation">
-                <div class="container">
-
-                </div>
-            </div>
+            <nav class="header-navigation">
+                <ul class="navigation">
+                    <li class="navigation__link"><a href="#visiting">Visiting</a></li>
+                    <li class="navigation__link"><a href="#explore">Explore</a></li>
+                    <li class="navigation__link"><a href="#gallery">Video</a></li>
+                    <li class="navigation__link"><a href="#tickets">Tickets</a></li>
+                    <li class="navigation__link"><a href="#visiting">Gallery</a></li>                   
+                    <li class="navigation__link"><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+   
     <main class="main">
-        <div class="container">
-           <section class="welcome">
-               <div class="welcome-textframe">                   
-                    <h2 class="h2-welcome h2 wright">Welcome to the Louvre</h2>
-                    <h3 class="h3-welcome h3 wright">From the castle to the museum</h3>
-                    <button class="welcome btn">Discover the Louvre</button>
-               </div>              
-               <div class="welcome-foto welcome-pagination">
+        <div class="container main__contanier">
+            <section class="welcome-section">
+                <div class="contanier welcome__container">
+                    <div class="welcome-frame">
+                        <h1 class="Welcome">Welcome 
+                            to the Louvre</h1>
+                        <p>From the castle to the museum</p>
+                        <div class="welcome__button">
+                            <button class="button">Discover the Louvre</button>
+                        </div>                            
+                    </div>
+                    <div class="foto-frame">
+                        <img src="assets/png/Frame (3).png" alt="Welcome-foto">
+                        <span class="slider-pagination"></span>
+                    </div> 
+                                                               
+                </div>
+            </section>   
 
-               </div>
-           </section>
-           <section class="Visiting">
-               <h2 class="Virtyal tour">Virtyal tour</h2>
-           </section>
-           <section class="Explore">
+            <section class="visiting-section" id="visiting">
+                
+                <div class="contanier ">
+                    <h2 class="section-title">Virtyal tour</h2>
+                    <div class="rectangle__section"></div>
+                    <div class="visiting__container">
+                        <div class="picture-squere">
+                            <div class="picture">
+                                <img src="./assets/img/Rectangle.jpg" alt="Rectangle">
+                            </div>                            
+                            <h3>Royal Palace</h3>
+                            <div class="rectangle"></div>
+                            <p class="virtual-tour">360° Virtual Tour</p>
+                            <p class="google-view">Google Street Panorama View</p>
+                               
+                        </div>
+                        <div class="picture-squere">
+                            <img src="./assets/img/Rectangle2.jpg" alt="Rectangle">
+                            <h3>Denon Wing</h3>
+                            <div class="rectangle"></div>
+                            <p class="virtual-tour">360° Virtual Tour</p>
+                            <p class="google-view">Google Street Panorama View</p>
+                                
+                         </div>
+                        <div class="picture-squere">
+                            <img src="./assets/img/Rectangle3.jpg" alt="Rectangle">
+                            <h3>Colonnade Perrault</h3>
+                            <div class="rectangle"></div>
+                            <p class="virtual-tour">360° Virtual Tour</p>
+                            <p class="google-view">Google Street Panorama View</p>
+                                
+                        </div>
+                        <div class="picture-squere">
+                            <img src="./assets/img/Rectangle4.jpg" alt="Rectangle">
+                            <h3>Greek hal</h3>
+                            <div class="rectangle"></div>
+                            <p class="virtual-tour">360° Virtual Tour</p>
+                            <p class="google-view">Google Street Panorama View</p>
+                                
+                         </div>
+                        <div class="picture-squere">
+                            <img src="./assets/img/Rectangle5.jpg" alt="Rectangle">
+                            <h3>Mona Lisa</h3>
+                            <div class="rectangle"></div>
+                            <p class="virtual-tour">360° Virtual Tour</p>
+                            <p class="google-view">Google Street Panorama View</p>
+                        </div>                            
+                                
+                        
+                        <div class="picture-squere">
+                            <img src="./assets/img/Rectangle6.jpg" alt="Rectangle">
+                            <h3>Night Palace</h3>
+                            <div class="rectangle"></div>
+                            <p class="virtual-tour">360° Virtual Tour</p>
+                            <p class="google-view">Google Street Panorama View</p>                                
+                        </div>              
+                    </div>
+                                       
+                </div>               
+            </section>
 
-           </section>
-           <section class="Video">
+            <section class="explore-section" id="explore">
+                <div class="contanier explore__container">
+                    <div class="left-block">
+                        <h2 class="section-title">Picture explore</h2>
+                        <div class="rectangle__section"></div>
+                        <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
+                        <p>It was cleaned in 1984 to remove a "yellow veil" of dust that had gathered since the previous restoration in the 19th century.</p>
+                        <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+                    </div>
+                       
+                    <div class="picture-frame">
+                        <img src="assets/png/Rectangle back.png" alt="Welcome-foto">
+                       
+                    </div> 
+                                                                   
+                </div>
+            </section> 
+            
+            <section class="video-section" id="video">
+                <div class="contanier video-contanier">
+                    <div class="top-block">
+                        <h2 class="section-title">Video journey</h2>
+                        <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+                    </div>
+                    <div class="main-video">
+                        <video src="assets/video/video.mp4" poster="assets/png/Rectanglevideo.png" controls></video>
+                        <div class="pleer"><img src="assets/png/Frame (5).png" alt=""></div>
 
-           </section>
-           <section class="Gallery">
+                    </div>
 
-           </section>
-           <section class="Tickets">
+                    <div class="spare-video">
+                        <video src="assets/video/video.mp4" poster="assets/png/Video slide item.png" controls></video>
+                        <video src="assets/video/video.mp4" poster="assets/png/Video slide item (1).png" controls></video>
+                        <video src="assets/video/video.mp4" poster="assets/png/Video slide item (2).png" controls></video>
 
-           </section>
-           <section class="Contacts">
-
-           </section>
-           
-
-        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Gallery">
         
+            </section>
+                
+            <section class="Tickets">
+        
+            </section>
+            <section class="Contacts">
+        
+            </section>
+                    
+        
+        </div>                
+           
     </main>
-    <footer class="footer"></footer>
+
+    <footer class="footer">
+
+    </footer>      
+        
+    
+        
 </body>
+           
 </html>
