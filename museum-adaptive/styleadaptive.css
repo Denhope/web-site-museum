@@ -3,10 +3,8 @@
     :root {
         --font1: 50px;
         --font2: 28px;
-        --font4: 20px;      
-        
-        
-    }
+        --font4: 20px;    
+                   }
     .container {
         max-width: 984px;
     }
@@ -17,8 +15,6 @@
     .header {
         height: 130px;
     }
-
-
     
     .hamburger {
         position:relative;
@@ -172,5 +168,3 @@
 
    
 }
-
-/*  */
