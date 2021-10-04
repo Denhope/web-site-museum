@@ -8,6 +8,11 @@
     .container {
         max-width: 984px;
     }
+
+    .header-container{
+        position: relative;
+        height: 130px;
+    }
     header .navigation{
         display: none;
     }

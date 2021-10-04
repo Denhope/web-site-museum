@@ -41,9 +41,11 @@ p {
 }
 
 .container {
-    /* width: calc(100% - 40px); */
-    max-width: 1440px;
+    position: relative;
+    display: flex;
+    width: 1480px;    
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .link-html {
@@ -59,18 +61,19 @@ p {
 
 /* Header */
 
-.header {
-    padding-right: 22px;
-    padding-top: 48px;
-    padding-bottom: 50px;
-    background-color: var(--bg-dark);
+.header {   
     
+    background-color: var(--bg-dark);
 }
 
 .header-container {
+    width: 1440px;
+    height: 150px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
+    
 }
 
 
@@ -164,8 +167,14 @@ p {
 /* Section */
 
 .section {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    display: flex;
+}
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* padding-top: 75px;
+    padding-bottom: 75px; */
 }
 
 .section-title {
@@ -256,6 +265,7 @@ p {
     /* padding-top: 150px;
     padding-bottom: 265px; */
     position: relative;
+    width: 1440px;
 }
 
 .welcome-wrapper {
@@ -489,18 +499,29 @@ p {
 
 
 /* Visiting */
+.visiting-container{
+    /* position: relative;
+    width: 1440px; */
+    display: flex;
+    flex-direction: column;
+    padding: 75px 0;
+    width: 100%;
+}
 
 .visiting-section {
     padding-bottom: 63px;
 }
 
-.visiting-wrapper {
-    width: 100%;
+
+.visiting-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 66px 60px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 75px 60px;
+    padding-top: 75px;
+    line-height: 0;
 }
-
 .visiting-item {
     display: block;
     text-decoration: none;
@@ -566,8 +587,12 @@ p {
 }
 
 .explore-container {
+    
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    padding: 75px 0;
+    gap: 60px;    
+    
 }
 
 .explore-text {
@@ -663,25 +688,57 @@ p {
 
 /* Video */
 
+
+
 .video-section {
-    padding-top: 37px;
-    padding-bottom: 75px;
+    margin: 0;
+    padding: 0;
     
 }
-
-.video {
-    width: 1440px;
-    height: 650px;
-    background-image: url("assets/img/Video.jpg");
-    background-repeat: no-repeat; 
-    position: relative;    
+.video-container{
+    display: flex;
+    flex-direction: column;
+    padding: 75px 0;
+    width: 100%;
 }
 
-.video-item {
+.video-textbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 115px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    color: #000000;
+}
+.video-player{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
     margin-top: 75px;
+    margin-bottom: 40px;
+    height: auto;
+    background-color: #000000;
 }
 
-.play-item {
+.player-video {
+    max-width: 1440px;
+    width: 100%;
+    max-height: 650px;
+    height: auto;
+  }
+  
+  video[poster]{
+    width:100%;
+    object-fit:cover;
+  }
+
+  /* КНопка */
+  .play-item {
     width: 220px;
     height: 220px;
 
@@ -699,6 +756,14 @@ p {
     cursor: pointer;
 
     transition: background-color 1s linear;
+}
+
+.play-item:hover {
+    background-color: rgba(179, 179, 179, .5);
+}
+
+.play-item img {
+    padding-left: 20px;
 }
 
 .play-item:hover {
@@ -728,6 +793,29 @@ p {
     border: none;
 }
 
+
+
+.btn-scale {
+    margin: 0 23px 0 46px;
+    width: 36px;
+    height: 36px;
+
+}
+
+.btn-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn-video img {
+    transition: filter 1s linear;
+}
+
+.btn-video img:hover {
+    filter: invert(69%) sepia(0%) saturate(0%) hue-rotate(195deg) brightness(88%) contrast(90%);
+}
+  
 .btn-play {
     margin-left: 30px;
     margin-right: 48px;
@@ -801,12 +889,7 @@ p {
     
 }
 
-.video-content {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .video-title {
     margin: 0;
@@ -818,11 +901,20 @@ p {
 }
 
 .video-corousel {
-    margin-top: 40px;
     display: flex;
-    justify-content: space-between;
-    
+    flex-direction: column;
+    row-gap: 40px;
+    width: 100%;
+   
 
+}
+
+.inframe-container{
+    display: flex;
+    gap: 42px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .video-corousel-control {
@@ -899,9 +991,11 @@ p {
 
 .picture-container {
     position: relative;
-    height: 2125px;
-    overflow: hidden;
+    width: 100%;
+    padding-top: 75px;
+    
 }
+
 
 .gallery-mask {
     position: absolute;
