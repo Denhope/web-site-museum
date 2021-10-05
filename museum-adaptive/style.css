@@ -1034,9 +1034,26 @@ p {
     
 }
 
-.tickets-wrapper {
-    display: flex;
+.tickets-container {
+    width: 100%;
+    padding: 75px 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
 
+}
+
+.tickets-form{
+
+}
+.tickets-inner{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 60px;
+    margin-top: 75px;      
 }
 
 .tickets-img {
@@ -1044,11 +1061,20 @@ p {
     height: 550px;
 }
 
-.tickets-content {
-    width: 660px;
-    margin-left: 60px;
+.tickets-content-container{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    width: 660px;
+}
+.left-tickets-column {
+    display: flex;
+    flex-direction: column;
+}
+.right-tickets-column{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 .tickets-amount {

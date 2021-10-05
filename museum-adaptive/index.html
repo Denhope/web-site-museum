@@ -260,54 +260,74 @@
 
         <section class="section tickets-section" id="tickets">
             <div class="container">
-                <h2 class="section-title section-title--gold underline-title">Buy tickets</h2>
-                <div class="tickets-wrapper">
-                    <img class="tickets-img" src="assets/img/Tickets.jpg" alt="tickets buy">
-                    <div class="tickets-inner">
-                        <div class="tickets-content">
-                            <div class="tickets-type">
-                                <h4 class="section-subtitle section-subtitle--darkness subtitle--ticket">Ticket Type</h4>
-                                
-                                <label class="type-item section-text">Permanent exhibition
-                                    <input type="radio" name="type_tickets" checked="checked">
-                                    <span class="checkmark"></span>
-                                </label>
+                
+                <div class="tickets-container">
+                    <form action="#" class="tickets-form" method="post">
+                        <h2 class="section-title section-title--gold underline-title">Buy tickets</h2>
+                        <div class="tickets-inner">
+                            <div class="tickets-img-container">
+                                <img class="tickets-img" src="assets/img/Tickets.jpg" alt="tickets buy">
+                            </div>                            
+
+                            <div class="tickets-content-container">
+                                <div class="left-tickets-column">
+                                    <div class="tickets-type">
+                                        <h4 class="section-subtitle section-subtitle--darkness subtitle--ticket">Ticket Type</h4>
+                                        
+                                        <label class="type-item section-text">Permanent exhibition
+                                            <input type="radio" name="type_tickets" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                            
+                                        <label class="type-item section-text">Temporary exhibition
+                                            <input type="radio" name="type_tickets">
+                                            <span class="checkmark"></span>
+                                        </label>
+            
+                                        <label class="type-item section-text">Combined Admission
+                                            <input type="radio" name="type_tickets">
+                                            <span class="checkmark"></span>
+                                        </label>
+            
+                                    </div>
+
                                     
-                                <label class="type-item section-text">Temporary exhibition
-                                    <input type="radio" name="type_tickets">
-                                    <span class="checkmark"></span>
-                                </label>
-    
-                                <label class="type-item section-text">Combined Admission
-                                    <input type="radio" name="type_tickets">
-                                    <span class="checkmark"></span>
-                                </label>
-    
-                            </div>
-                            <div class="tickets-amount">
-                                <h4 class="section-subtitle section-subtitle--dark section-subtitle--end subtitle-amount">Amount</h4>
-                                <p class="section-text tickets-text--amount">Basic 18+</p>
-                                <div class="number-tickets">
-                                    <button class="tickets-btn tickets-btn--left"  type="button" onclick="this.nextElementSibling.stepDown()">–</button>
-                                    <input class="number" type="number" min="0" max="20" value="1" readonly>
-                                    <button class="tickets-btn tickets-btn--right" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                    
+                                    
                                 </div>
+
+                                <div class="right-tickets-column">
+                                    <div class="tickets-amount">
+                                        <h4 class="section-subtitle section-subtitle--dark section-subtitle--end subtitle-amount">Amount</h4>
+                                        <p class="section-text tickets-text--amount">Basic 18+</p>
+                                        <div class="number-tickets">
+                                            <button class="tickets-btn tickets-btn--left"  type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                                            <input class="number" type="number" min="0" max="20" value="1" readonly>
+                                            <button class="tickets-btn tickets-btn--right" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                        </div>
+                                        
+                                        <p class="section-text tickets-text--amount">Senior 65+</p>
+                                        <div class="number-tickets">
+                                            <button class="tickets-btn tickets-btn--left"  type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                                            <input class="number" type="number" min="0" max="20" value="1" readonly>
+                                            <button class="tickets-btn tickets-btn--right" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                        </div>
+            
+                                        <div class="tickets-cost">
+                                            <div class="section-subtitle section-subtitle--dark tickets-subtitle--cost">Total €</div>
+                                            <div class="section-subtitle section-subtitle--dark tickets-subtitle--cost">220</div>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn-buy" type="submit">Buy Now</button>
+                                </div>
+                            </div>
                                 
-                                <p class="section-text tickets-text--amount">Senior 65+</p>
-                                <div class="number-tickets">
-                                    <button class="tickets-btn tickets-btn--left"  type="button" onclick="this.nextElementSibling.stepDown()">–</button>
-                                    <input class="number" type="number" min="0" max="20" value="1" readonly>
-                                    <button class="tickets-btn tickets-btn--right" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-                                </div>
-    
-                                <div class="tickets-cost">
-                                    <div class="section-subtitle section-subtitle--dark tickets-subtitle--cost">Total €</div>
-                                    <div class="section-subtitle section-subtitle--dark tickets-subtitle--cost">220</div>
-                                </div>
-                            </div>
                         </div>
-                        <button class="btn-buy" type="submit">Buy Now</button>
-                    </div>
+                    </form>
+                    
+                    
+                    
                 </div>
             </div>
            
