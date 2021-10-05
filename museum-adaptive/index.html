@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleadaptive.css">
+    <!-- <link rel="stylesheet" href="styleadaptive.css"> -->
     <link rel="icon" href="assets/favicon.ico">
     <title>museum</title>
 </head>
@@ -52,36 +52,18 @@
     </header>
     <main>
         <section class="section welcome-section" id="welcome">
-            <div class="container welcome-container">
-                <div class="welcome-wrapper">
-                    <h2 class="section-title section-title--lightness welcome-title">Welcome<br>to the Louvre</h2>
-                    <p class="welcome-subtitle">From the castle to the museum</p>
-                    <a class="btn" href="tours/tour7.html" target="_blank">Discover the Louvre</a> 
-                </div>
-                
-                <div class="slider">
-                    <div class="carousel">
-                        <div class="slider-container">
-                            <div class="item-slider active-slider">
-                                <img src="assets/img/welcome-slider/1.jpg" alt="img">
-                            </div>
-
-                            <div class="item-slider">
-                                <img src="assets/img/welcome-slider/2.jpg" alt="img">
-                            </div>
-
-                            <div class="item-slider">
-                                <img src="assets/img/welcome-slider/3.jpg" alt="img">
-                            </div>
-
-                            <div class="item-slider">
-                                <img src="assets/img/welcome-slider/4.jpg" alt="img">
-                            </div>
-
-                            <div class="item-slider">
-                                <img src="assets/img/welcome-slider/5.jpg" alt="img">
-                            </div>
-                        </div>
+            <div class="container ">
+                <div class="welcome-container">
+                    <div class="welcome-wrapper">
+                        <h2 class="section-title section-title--lightness welcome-title">Welcome<br>to the Louvre</h2>
+                        <p class="welcome-subtitle">From the castle to the museum</p>
+                        <a class="btn" href="tours/tour7.html" target="_blank">Discover the Louvre</a> 
+                    </div>
+                    
+                    <div class="slider">
+                        <div class="slider-shadow"></div>
+                        <img class="item-slider" src="assets/img/welcome-slider/1.jpg">
+                        
                         <div class="control">
                             <div class="number-wrapper">
                                 <div class="number-slider active-number">01</div>
@@ -99,9 +81,11 @@
                                 <div class="arrow arrow-left"></div>
                                 <div class="arrow arrow-right"></div>
                             </div>
-                        </div>
+                        </div>   
                     </div>
+                    
                 </div>
+                
             </div>   
         </section>
 
@@ -160,16 +144,15 @@
         </section>
 
         <section class="section explore-section" id="explore">
-            <div class="container ">
+            <div class="container">
                 <div class="explore-container">
                     <div class="explore-content">
                         <h2 class="section-title section-title--lightness underline-title">Picture explore</h2>
-                        <div class="explore-text">
+                        <div class="explore-text-box">
                             <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading  artist of the Spanish Golden Age.</p>
                             <p>It was cleaned in 1984 to remove a <span class="explore-text--yellow">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
                             <p class="p3">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
-                        </div>
-                        
+                        </div>                        
                     </div>
                     <div class="explore-img">
                         <div class="img-origin">
@@ -247,8 +230,8 @@
         <section class="section gallery-section" id="gallery">
             <div class="container ">
                 <div class="picture-container">
-                    <div class="gallery-mask"></div>
                     <h2 class="section-title section-title--lightness section-title-gallery">Art Gallery</h2>
+                    <div class="gallery-mask"></div>                    
                     <div class="picture-inner-container">
                 </div>
                
@@ -324,9 +307,7 @@
                             </div>
                                 
                         </div>
-                    </form>
-                    
-                    
+                    </form>          
                     
                 </div>
             </div>
@@ -488,29 +469,34 @@
         <div class="parallax">  </div> 
 
         <section class="section contacts-section" id="contacts">
-            <div class="container">
-                <h2 class="section-title section-title--gold underline-title contacts-title">Contacts</h2>
-                <div class="contacts-wrapper">
-                    <div class="contacts-content">
-                        <h4 class="section-subtitle contacts-subtitle">Palais Royal <br> Musee du Louvre</h4>
-                        <ul class="section-text contacts-text">
-                            <li>address: 75001 Paris, France</li>
-                            <li>
-                                <a class="contact-link" href="tel:+33014005050">phone: +33(0) 1 40 20 50 50</a>
-                            </li>
-                            <li>
-                                <a class="contact-link" href="mailto:info@louvre.fr">mail: info@louvre.fr</a>
-                            </li>
-                        </ul>
+            <div class="container">                
+                <div class="contacts-container">
+                    <h2 class="section-title section-title--gold underline-title contacts-title">Contacts</h2>
+                    <div class="contacts-inner">
+                        <div class="contacts-content">
+                            <h4 class="section-subtitle contacts-subtitle">Palais Royal <br> Musee du Louvre</h4>
+                            <ul class="section-text contacts-text">
+                                <li>address: 75001 Paris, France</li>
+                                <li>
+                                    <a class="contact-link" href="tel:+33014005050">phone: +33(0) 1 40 20 50 50</a>
+                                </li>
+                                <li>
+                                    <a class="contact-link" href="mailto:info@louvre.fr">mail: info@louvre.fr</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img class="contacts-img" src="assets/img/Contacts.png" alt="map">
                     </div>
-                <img class="contacts-img" src="assets/img/Contacts.png" alt="map">
+                    
                 </div>
+                
+            
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-wrapper">
+            <div class="footer-container">
                 <div class="footer-inner">
                     <div class="logo logo-footer">
                         <a class="logo-icon" href="index.html"></a>
@@ -576,17 +562,23 @@
 
         <div class="footer-line"></div>
 
-        <div class="container">
-            <div class="footer-items">
-                <div class="footer-date footer-text">&copy; 2021</div>
-                <div class="school-link">
-                    <a class="footer-text footer-link" href="https://app.rs.school/">The Rolling Scopes School</a>
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright-container">
+                    <div class="footer-date footer-text">&copy; 2021</div>
+                    <div class="school-link">
+                        <a class="footer-text footer-link" href="https://app.rs.school/">The Rolling Scopes School</a>
+                    </div>
+                    <div class="user-link">
+                        <a class="footer-text footer-link" href="https://">Denis Kovalchuk</a>
+                    </div>
                 </div>
-                <div class="user-link">
-                    <a class="footer-text footer-link" href="https://">Denis Kovalchuk</a>
-                </div>
+                
             </div>
         </div>
+
+            
+        
 
 
     </footer>
