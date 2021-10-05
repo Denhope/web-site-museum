@@ -64,6 +64,7 @@ p {
 .header {   
     
     background-color: var(--bg-dark);
+    display: flex;
 }
 
 .header-container {
@@ -254,25 +255,21 @@ p {
 
 .welcome-section {
     
-    height: 803px;
-    padding: 0;
-
+    
     background-color: var(--bg-dark);
 
 }
 
 .welcome-container {
-    /* padding-top: 150px;
-    padding-bottom: 265px; */
     position: relative;
-    width: 1440px;
+    width: 100%;
+    padding-bottom: 60px;
 }
 
 .welcome-wrapper {
     position: absolute;
-    top: 147px;
-    left: 0;
-    z-index: 1000;
+    margin-top: 150px;
+    z-index: 1;
 }
 
 .welcome-title {
@@ -292,7 +289,12 @@ p {
 }
 
 .btn {
-    padding: 24px 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    width: 360px;
+    height: 75px;
     
     font-family: 'Roboto', sans-serif;
     font-size: var(--font4);
@@ -321,32 +323,28 @@ p {
 
 /* Slider */
 
-.carousel {
-    position: absolute;
-    height: 810px;
-    right: 0;
-    top: 0;
-    width: 1000px;
-    overflow: hidden;
+.slider{
+    position: relative;
+    max-width: 1000px;
+    max-height: 750px;
+    width: 70.5%;
+    margin-left: auto;
 }
 
-
+.slider-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+}
 
 .item-slider {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10;
-    width: 1000px;
-    height: 750px;  
-
-    animation: .5s ease-in-out;
-
-    
+    width: 100%;
+    height: auto;    
 }
 
-.item-slider:after {
+/* .item-slider:after {
 	content: "";
 	display: block;    	  
 	position: absolute;
@@ -358,7 +356,7 @@ p {
 	background: transparent;
 	background-image: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
 	opacity: 1;
-}
+} */
 
 .active-slider {
     display: block;
@@ -2101,4 +2099,30 @@ option {
     color: var(--font-gold);
 }
 
+@media (max-width: 1024px){
+    .container {
+      width: 1024px;
+    }
 
+    :root {
+        --font1: 50px;
+        --font2: 28px;
+        --font4: 20px;    
+    }
+/*HEADER*/
+    .header-container{
+        position: relative;
+        height: 130px;
+    }
+
+    header .navigation{
+        display: none;
+    }
+
+    /* MENU*/
+
+
+
+
+
+}
