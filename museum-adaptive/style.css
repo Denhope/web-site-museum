@@ -877,20 +877,126 @@ video[poster]{
     width:100%;
     object-fit:cover;
 }
-.inframe{
+/* .inframe{
     position: relative;
     max-width: 452px;
     max-height: 254px;
     width: 100%;
     height: auto;
     line-height: 0;
-}
+} */
 
 *, *:before, *:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  width: 100%;
+}
+
+.playlist__slider {
+  display: flex;
+  gap: 42px;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.playlist__preview {
+  position: relative;
+
+  max-width: 452px;
+  max-height: 254px;
+  width: 100%;
+  height: auto;
+
+  line-height: 0;
+}
+
+.playlist__preview img {
+  width: 100%;
+  z-index: 0;
+}
+
+
+.playlist__preview iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.playlist__items {
+  display: flex;
+  align-self: center;
+  gap: 20px;
+
+  font-size: 0;
+}
+
+.playlist__item {
+  display: block;
+  width: 12px;
+  height: 12px;
+
+  list-style: none;
+  background: #999999;
+  border-radius: 50%;
+}
+
+.playlist__item--checked {
+  background: #333333;
+}
+
+.playlist__arrow {
+  list-style: none;
+}
+
+.playlist__arrow-left,
+.playlist__arrow-right {
+  height: 12px;
+  width: 10px;
+
+  border: none;
+}
+
+.playlist__arrow-left {
+  background: transparent url("../assets/svg/player/arrow-left.svg") no-repeat;
+}
+
+.playlist__arrow-right {
+  background: transparent url("../assets/svg/player/arrow-right.svg") no-repeat;
+}
+
+.playlist__arrow-left:hover {
+  cursor: pointer;
+  background: transparent url("../assets/svg/player/arrow-left-active.svg") no-repeat;
+}
+
+.playlist__arrow-right:hover {
+  cursor: pointer;
+  background: transparent url("../assets/svg/player/arrow-right-active.svg") no-repeat;
+}
+
+.playlist__item:hover {
+  cursor: pointer;
+  background-color: #710707;
+}
+
+
+
+
+
+
+
+
   
 
   /* КНопка
@@ -1046,7 +1152,103 @@ video[poster]{
     
 } */
 
-
+  .playlist {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 100%;
+  }
+  
+  .playlist__slider {
+    display: flex;
+    gap: 42px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  
+  .playlist__preview {
+    position: relative;
+  
+    max-width: 452px;
+    max-height: 254px;
+    width: 100%;
+    height: auto;
+  
+    line-height: 0;
+  }
+  
+  .playlist__preview img {
+    width: 100%;
+    z-index: 0;
+  }
+  
+  
+  .playlist__preview iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+  }
+  
+  .playlist__items {
+    display: flex;
+    align-self: center;
+    gap: 20px;
+  
+    font-size: 0;
+  }
+  
+  .playlist__item {
+    display: block;
+    width: 12px;
+    height: 12px;
+  
+    list-style: none;
+    background: #999999;
+    border-radius: 50%;
+  }
+  
+  .playlist__item--checked {
+    background: #333333;
+  }
+  
+  .playlist__arrow {
+    list-style: none;
+  }
+  
+  .playlist__arrow-left,
+  .playlist__arrow-right {
+    height: 12px;
+    width: 10px;
+  
+    border: none;
+  }
+  
+  .playlist__arrow-left {
+    background: transparent url("../assets/svg/player/arrow-left.svg") no-repeat;
+  }
+  
+  .playlist__arrow-right {
+    background: transparent url("../assets/svg/player/arrow-right.svg") no-repeat;
+  }
+  
+  .playlist__arrow-left:hover {
+    cursor: pointer;
+    background: transparent url("../assets/svg/player/arrow-left-active.svg") no-repeat;
+  }
+  
+  .playlist__arrow-right:hover {
+    cursor: pointer;
+    background: transparent url("../assets/svg/player/arrow-right-active.svg") no-repeat;
+  }
+  
+  .playlist__item:hover {
+    cursor: pointer;
+    background-color: #710707;
+  }
 
 .video-title {
     margin: 0;
@@ -1057,7 +1259,7 @@ video[poster]{
     line-height: 1.78;
 }
 
-.video-corousel {
+/* .video-corousel {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
@@ -1134,7 +1336,9 @@ video[poster]{
 
 .video-corousel iframe {
     border: none;
-}
+} */
+
+
 
 
 /* Gallery */
