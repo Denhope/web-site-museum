@@ -754,19 +754,130 @@ p {
     height: auto;
     background-color: #000000;
 }
-
-.player-video {
+video[poster]{
+    width:100%;
+    object-fit:cover;
+  }
+  
+  .player__screen-button {
+    position: absolute;
+    top: calc(50% - 155px);
+    left: calc(50% - 110px);
+  
+    z-index: 2;
+  
+    width: 220px;
+    height: 220px;
+  
+    background: transparent url("../museum-adaptive/assets/svg/player/screen-button.svg");
+    border: none;
+    cursor: pointer;
+  }
+  
+  .player__controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    height: 85px;
+    padding: 0 30px;
+    width: 100%;
+  
+    background-color: #000000;
+  }
+  
+  .player__play {
+    width: 23px;
+    height: 31px;
+    flex-shrink: 0;
+  
+    border: none;
+    background: transparent url("/museum-adaptive/assets/svg/player/play.svg");
+  }
+  
+  .player__range {
+    height: 8px;
+  
+    border-radius: 0;
+    background: linear-gradient(to right, #710707 0%, #710707 50%, #C4C4C4 50%, #C4C4C4 100%);
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+  
+    transition: background 450ms ease-in;
+  }
+  
+  .player__range::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+  
+    border-radius: 50%;
+    background: #ffffff;
+    -webkit-appearance: none;
+  }
+  
+  .player__progress {
+    flex-grow: 6;
+    flex-basis: 929px;
+  }
+  
+  .player__volume {
+    flex-grow: 1;
+    flex-basis: 155px;
+  }
+  
+  .player__mute {
+    width: 38px;
+    height: 31px;
+    flex-shrink: 0;
+  
+    background: transparent url("../museum-adaptive/assets/svg/player/mute.svg");
+    border: 0;
+  }
+  
+  .player__fullscreen {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+  
+    background: transparent url("../museum-adaptive/assets/svg/player/fullscreen.svg");
+    border: none;
+  }
+  
+  .player__range::-webkit-slider-thumb:hover {
+    cursor: pointer;
+    background-color: #dedede;
+  }
+  
+  .player__screen-button,
+  .player__play,
+  .player__mute,
+  .player__fullscreen,
+  .player__range::-webkit-slider-thumb {
+    transition: background-color, opacity 0.5s;
+  }
+  
+  .player__screen-button:hover,
+  .player__play:hover,
+  .player__mute:hover,
+  .player__fullscreen:hover
+  {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+/* .player-video {
     max-width: 1440px;
     width: 100%;
     max-height: 650px;
     height: auto;
-  }
+} */
+
   
-  .video-section[poster]{
+.video[poster]{
     width:100%;
     object-fit:cover;
-  }
-  .inframe{
+}
+.inframe{
     position: relative;
     max-width: 452px;
     max-height: 254px;
@@ -780,10 +891,10 @@ p {
     padding: 0;
     box-sizing: border-box;
 }
-  }
+  
 
-  /* КНопка */
-  .play-item {
+  /* КНопка
+.play-item {
 
 
     
@@ -820,9 +931,9 @@ p {
 
 .play-item img {
     padding-left: 20px;
-}
+} */
 
-.video-control {
+/* .video-control {
     width: 100%;
     height: auto;
     display: flex;
@@ -933,7 +1044,7 @@ p {
     background: linear-gradient(to right, #710707 0%, #710707 42%, #C4C4C4 42%, #C4C4C4 100%);
     width: 155px;
     
-}
+} */
 
 
 
