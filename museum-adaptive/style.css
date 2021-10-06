@@ -14,6 +14,12 @@
     --content-width:420px;
 }
 
+.burger-add {
+    display: none;
+
+}
+
+
 #visiting, #video, #tickets, #contacts {
     background-color: var(--bg-light);
 
@@ -119,15 +125,42 @@ p {
     color: var(--font-gold);
 }
 
-.hamburger {
+/* .hamburger {
     display: none;
     position: relative;
     width: 31px;
     height: 25px;
     
+} */
+
+.burger__item--close {
+    background-color: transparent;
+}
+.burger__item {
+    display: block;
+    width: 32px;
+    height: 2px;
+    position: relative;
+    background-color: #ffffff;
+    font-size: 0;
+    color: transparent;
 }
 
-
+.burger {
+    display: none;
+    padding: 2px 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    transition: display .5s linear;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.nav-wrapper, .nav-header {
+    
+    display: none;
+}
 
 
 /* Nav */
@@ -2142,9 +2175,64 @@ option {
         height: 130px;
     }
 
+
     header .navigation{
         display: none;
     }
+    .nav-wrapper, .nav-header{
+        display: block;
+    }
+    .nav-wrapper open-nav{
+        
+        margin: 0;
+        align-items: center;
+        list-style: none;
+        padding: 35px 55px;
+        display: flex;
+        width: 28%;
+        height: 585px;
+        justify-content: left;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 50px);
+        left: 0;
+        z-index: 100000;
+        animation: .5s ease-in-out;   
+    }
+
+    .nav-header{
+        padding: 35px 55px;
+        display: flex;
+        width: 28%;
+        height: 585px;
+        justify-content: left;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 50px);
+        left: 0;
+        z-index: 100000;
+        animation: .5s ease-in-out;
+    }
+
+    .nav-header > li {
+        width: 100%;
+    }
+
+    .nav-link--header {
+        text-align: left;
+        font-size: 20px;
+        position: relative;
+    }
+
+    .burger-close--hide {
+        display: none;
+    }
+    
+    .burger {
+        display: block;
+        margin-bottom: -4px;
+    }
+    
 
     /* MENU*/
     .nav {
