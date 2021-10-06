@@ -2631,11 +2631,8 @@ option {
         display: none;
     }
 
-    .img-origin{
-        max-width: 720px;
-        width: 100%;
-        height: auto;
-    }
+    /*video*/
+
     .video-container{
         padding: 60px 0;
     }
@@ -2647,15 +2644,61 @@ option {
         margin-top: 40px;
 
     }
-    .play-item{
+
+    .player__controls {
+        gap: 30px;
+        height: 60px;
+        padding: 0 40px;
+    }
+    .player__screen-button {
         top: calc(50% - 105px);
         left: calc(50% - 76px);
-
         width: 152px;
         height: 152px;
-        background: transparent url("/museum-adaptive/assets/svg/play.svg") no-repeat;
+        background: transparent url("../museum-adaptive/assets/svg/player/screen-button2.svg") no-repeat;
     }
+    
+    .player__range {
+        height: 5px;
+    }
+    
+    .player__progress {
+        flex-grow: 6;
+        /*width: 564px;*/
+        flex-basis: 564px;
+    }
+    
+    .player__volume {
+        flex-grow: 1;
+        /*width: 143px;*/
+        flex-basis: 143px;
+    }
+    
+    .player__mute {
+      width: 26px;
+        height: 20px;
+    
+        background: transparent url("../museum-adaptive/assets/svg/player/mute2.svg");
+    }
+    
+    .player__fullscreen {
+        width: 26px;
+        height: 26px;
+    
+        background: transparent url("../museum-adaptive/assets/svg/player/fullscreen2.svg");
+    }
+    
+    .player__range::-webkit-slider-thumb {
+        width: 13px;
+        height: 13px;
+    }
+    
+      .playlist__slider {
+        gap: 41px;
+    }   
 
+     
+    
     .picture-container{
         padding-top: 60px;
     }
