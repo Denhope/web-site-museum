@@ -968,21 +968,21 @@ video[poster]{
 }
 
 .playlist__arrow-left {
-  background: transparent url("../assets/svg/player/arrow-left.svg") no-repeat;
+  background: transparent url("../museum-adaptive/assets/svg/player/arrow-left.svg") no-repeat;
 }
 
 .playlist__arrow-right {
-  background: transparent url("../assets/svg/player/arrow-right.svg") no-repeat;
+  background: transparent url("../museum-adaptive/assets/svg/player/arrow-right.svg") no-repeat;
 }
 
 .playlist__arrow-left:hover {
   cursor: pointer;
-  background: transparent url("../assets/svg/player/arrow-left-active.svg") no-repeat;
+  background: transparent url("../museum-adaptive/assets/svg/player/arrow-left-active.svg") no-repeat;
 }
 
 .playlist__arrow-right:hover {
   cursor: pointer;
-  background: transparent url("../assets/svg/player/arrow-right-active.svg") no-repeat;
+  background: transparent url("../museum-adaptive/assets/svg/player/arrow-right-active.svg") no-repeat;
 }
 
 .playlist__item:hover {
@@ -2754,9 +2754,71 @@ option {
   .video-container {
     padding: 40px 0 80px;
   }
-  .inframe-3 {
-      display: none;
+
+  .player__screen-button {
+    top: calc(50% - 65px);
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    background: transparent url("../museum-adaptive/assets/svg/player/screen-button3.svg") no-repeat;
   }
+
+  .player__controls {
+    position: relative;
+
+    gap: 35px;
+    height: 58px;
+    padding: 5px 30px 0;
+  }
+
+  .player__progress {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+  }
+
+  .player__volume {
+    flex-basis: 287px;
+  }
+
+  .player__play {
+    width: 23px;
+    height: 29px;
+  }
+
+  .player__mute {
+    width: 27px;
+    height: 21px;
+  }
+
+  .player__fullscreen {
+    width: 27px;
+    height: 27px;
+  }
+
+  .player__range::-webkit-slider-thumb {
+    width: 13px;
+    height: 13px;
+  }
+
+  .playlist {
+    row-gap: 20px;
+  }
+  .playlist__slider {
+    gap: 20px;
+  }
+  .playlist__preview:nth-child(3) {
+    display: none;
+  }
+  .playlist__item {
+    width: 10px;
+    height: 10px;
+  }
+
+  
+
+
 
   /* GALLERY */
   .picture-container {
@@ -2792,6 +2854,11 @@ option {
     margin-bottom: 40px;
     font-size: 20px;
     line-height: 23px;
+  }
+  .contacts-img {
+   
+    max-width: 100%;
+    max-height: 476px;
   }
 
   /* FOOTER */
