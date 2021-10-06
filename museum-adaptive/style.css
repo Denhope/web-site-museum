@@ -660,6 +660,8 @@ p {
     background-size: cover;
     z-index: 100;
     overflow: hidden;
+
+    
 }
 
 .img-copy {
@@ -2473,11 +2475,12 @@ option {
         width: 100%;
         margin: 0 auto;
         line-height: 0;
+        
     }
     .img-copy{
         display: none;
     }
-
+    
     /*video*/
 
     .video-container{
@@ -2896,6 +2899,8 @@ option {
   }
 }
 
+
+
 @media (max-width: 420px) {
     
     .container {
@@ -2912,6 +2917,12 @@ option {
     padding-top: 5px;
   }
 
+  /*EXPLORE*/
+  .explore-img{
+    margin-bottom: 0;
+  }
+    
+
   /* VIDEO */
 
   .video-player {
@@ -2919,13 +2930,7 @@ option {
    
   } 
 
-  .video-control {
-      display: none;
-    position: relative;
-   
-    height: 54px;
-    /* padding: 0 20px; */
-  }
+ 
   .video-container {
     padding: 36px 0 40px;
   }
@@ -2987,14 +2992,27 @@ option {
     margin-top: 45px;
     margin-bottom: 15px;
     padding:0;
+    
+  }
+  .school-link a{
+      display: none;
+  }
 
+  .navigation-footer{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 40px;
+    } 
 
-
-
-
-  
-   
-
+    .footer-social {
+        padding: 0;
+        gap: 5px;
+        justify-self: center;
+        align-self: center;
+        width: 260px;
+        margin: 0;
+    }
 }
 
 
