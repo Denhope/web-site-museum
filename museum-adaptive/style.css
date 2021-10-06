@@ -751,6 +751,9 @@ p {
 
   /* КНопка */
   .play-item {
+
+
+    
     width: 220px;
     height: 220px;
 
@@ -2242,7 +2245,6 @@ option {
 
     }
     .play-item{
-        display: none;
         top: calc(50% - 105px);
         left: calc(50% - 76px);
 
