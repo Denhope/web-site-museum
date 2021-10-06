@@ -729,9 +729,24 @@ p {
     height: auto;
   }
   
-  video[poster]{
+  .video-section[poster]{
     width:100%;
     object-fit:cover;
+  }
+  .inframe{
+    position: relative;
+    max-width: 452px;
+    max-height: 254px;
+    width: 100%;
+    height: auto;
+    line-height: 0;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
   }
 
   /* КНопка */
@@ -2373,10 +2388,7 @@ option {
 
    .welcome-title{
     text-align: center;
-   }
-
-
-  
+   } 
 
   .slider {
     width: 100%;
@@ -2519,6 +2531,107 @@ option {
   .booking {
     display: none;
   }
+}
+
+@media (max-width: 420px) {
+    
+    .container {
+      width: 420px;
+    }
+     
+    /* HEADER */
+  .header-container {
+    height: 90px;
+  }
+
+  /* WELCOME */
+  .welcome-wrapper {
+    padding-top: 5px;
+  }
+
+  /* VIDEO */
+
+  .video-player {
+    margin: 20px 0;
+   
+  } 
+
+  .video-control {
+      display: none;
+    position: relative;
+   
+    height: 54px;
+    /* padding: 0 20px; */
+  }
+  .video-container {
+    padding: 36px 0 40px;
+  }
+
+  .video-player {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    
+  }
+  .inframe{
+      max-width: 150px;
+  }
+
+  /* GALLERY */
+  .picture-container {
+    padding-top: 40px;
+  }
+  .picture-inner{
+    margin-top: 40px;
+    height: 637px;
+  }
+
+  /* TICKETS */
+  .tickets-inner{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .right-tickets-column{
+    align-items: center;
+    gap: 20px;
+  }
+  .btn-buy{
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .section-subtitle--end {
+    text-align: center;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 0 40px 0;
+  }
+  .footer-inner{
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 0 40px 0;
+  }
+
+  .footer-social {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    padding:0;
+
+
+
+
+
+  
+   
+
 }
 
 
