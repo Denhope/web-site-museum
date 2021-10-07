@@ -18,10 +18,83 @@
             <div class="header-container">
                 <div class="logo">
                     <a class="logo-icon" href="index.html"></a>
-                    <h1 class="logo-text">Louvre</h1>
-                    
+                    <h1 class="logo-text">Louvre</h1>                    
                 </div>
-                <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
+                <!-- <nav class="nav-wrapper">
+                    <ul class="nav-header closing-nav">
+                        <li>
+                            <a class="nav-link nav-link--header" href="#visiting">Visiting</a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav-link--header" href="#explore">Explore</a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav-link--header" href="#video">Video</a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav-link--header" href="#gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav-link--header" href="#tickets">Tickets</a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav-link--header" href="#contacts">Contacts</a>
+                        </li>
+    
+                        <div class="burger-add">
+                            <div class="burger-img">
+                                <img src="assets/img/burger/Burger-1.jpg" alt="">
+                            </div>
+                            <div class="burger-items">
+                                
+                                    <img class="burger-img" src="assets/img/burger/Burger-2.jpg" alt="">
+                                
+                                    <img class="burger-img" src="assets/img/burger/Burger-3.jpg" alt="">
+                               
+                            </div>
+    
+                            <div class="burger-line"></div>
+                            
+                            <div>
+                                <ul class="footer-social burger-social">
+                                    <li>
+                                        <a class="social-link" href="https://www.youtube.com/user/louvre" target="_blank">
+                                            <img src="assets/svg/Youtube.svg" alt="Youtube">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-link" href="https://www.instagram.com/museelouvre/" target="_blank">
+                                            <img src="assets/svg/Instagram.svg" alt="Instagram">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-link" href="https://www.facebook.com/museedulouvre" target="_blank">
+                                            <img src="assets/svg/Facebook.svg" alt="Facebook">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-link" href="http://twitter.com/museelouvre" target="_blank">
+                                            <img src="assets/svg/Twitter.svg" alt="Twitter">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-link" href="https://www.pinterest.fr/museedulouvre/" target="_blank">
+                                            <img src="assets/svg/Pinterest.svg" alt="Pinterest">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </ul>    
+                </nav>
+                <button class="burger burger-close burger-close--hide" type="button">
+                    <span class="burger__item burger__item--close">Burger</span> 
+                </button>
+                <button class="burger burger-open" type="button">
+                    <span class="burger__item burger__item--open">Burger</span> 
+                </button> -->
+                <!-- <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span> -->
                 <nav>
                     <ul class="navigation">
                     <li>
@@ -57,7 +130,7 @@
                     <div class="welcome-wrapper">
                         <h2 class="section-title section-title--lightness welcome-title">Welcome<br>to the Louvre</h2>
                         <p class="welcome-subtitle">From the castle to the museum</p>
-                        <a class="btn" href="tours/tour7.html" target="_blank">Discover the Louvre</a> 
+                        <a class="btn" href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" target="_blank">Discover the Louvre</a> 
                     </div>
                     
                     <div class="slider">
@@ -179,13 +252,24 @@
                         <div class="section-text video-text">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</div>
                     </div>
 
-                    <div class="video-player">                       
+                    <div class="video-player">  
+                        <button class="player__screen-button"></button>       
+                        <video class="player__video" poster="assets/jpg/player.webp" style="height: auto;"></video>  
+                        <div class="player__controls">
+                            <button class="player__play"></button>
+                            <input class="player__progress player__range" type="range">
+                            <button class="player__mute"></button>
+                            <input class="player__volume player__range" type="range">
+                            <button class="player__fullscreen"></button>
+                        </div> 
+                        
+                        
                         <!-- <button class="play-item">
                             <img src="assets/svg/Play-big.svg" alt="play">
                         </button> -->
-                        <video class="player-video" poster="assets/img/Video.jpg" style="height: 649.872px;"></video>
+                        <!-- <video class="player-video" poster="assets/img/Video.jpg" style="height: 649.872px;"></video> -->
                         
-                        <div class="video-control">
+                        <!-- <div class="video-control">
                             <button class="btn-video btn-play">
                                 <img src="assets/img/play.svg" alt="play">
                             </button>
@@ -197,10 +281,37 @@
                             <button class="btn-video btn-scale">
                                 <img src="assets/svg/scale.svg" alt="scale">
                             </button>
+                        </div> -->
+                    </div>
+
+                    <div class="playlist">
+                        <div class="playlist__slider">
+                          <div class="playlist__preview">
+                            <img src="assets/img/player/preview1.webp" data-video="aWmJ5DgyWPI">
+                          </div>
+                          <div class="playlist__preview">
+                            <img src="assets/img/player/preview2.webp" data-video="Vi5D6FKhRmo">
+                          </div>
+                          <div class="playlist__preview">
+                            <img src="assets/img/player/preview3.webp" data-video="NOhDysLnTvY">
+                          </div>
                         </div>
+                        <ul class="playlist__items">
+                          <li class="playlist__arrow">
+                            <button class="playlist__arrow-left"></button>
+                          </li>
+                          <li class="playlist__item playlist__item--checked"></li>
+                          <li class="playlist__item"></li>
+                          <li class="playlist__item"></li>
+                          <li class="playlist__item"></li>
+                          <li class="playlist__item"></li>
+                          <li class="playlist__arrow">
+                            <button class="playlist__arrow-right"></button>
+                          </li>
+                        </ul>
                     </div>
     
-                    <div class="video-corousel">
+                    <!-- <div class="video-corousel">
                         <div class="inframe-container">
                             <iframe class="inframe" idth="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
                             <iframe class="inframe" width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
@@ -217,7 +328,7 @@
                         <div class="dot-video"></div>
                         <div class="dot-video"></div>
                         <div class="arrow-right--video"></div>
-                    </div>
+                    </div> -->
     
                     </div>
                     
