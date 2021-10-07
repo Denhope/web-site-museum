@@ -2911,10 +2911,31 @@ option {
   .header-container {
     height: 90px;
   }
+  .logo-text{
+    /* padding-left: 54px; */
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .logo-icon{
+    padding-left: 54px;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 18px;
+    background: transparent url("../museum-adaptive/assets/svg/logo2.svg") no-repeat left top;
+
+  }
+  
+
 
   /* WELCOME */
   .welcome-wrapper {
     padding-top: 5px;
+  }
+
+  .welcome-title {
+    font-size: 28px;
   }
 
   /*EXPLORE*/
@@ -2926,8 +2947,7 @@ option {
   /* VIDEO */
 
   .video-player {
-    margin: 20px 0;
-   
+    margin: 20px 0;   
   } 
 
  
@@ -2937,12 +2957,83 @@ option {
 
   .video-player {
     margin-top: 20px;
-    margin-bottom: 40px;
-
-    
+    margin-bottom: 40px;    
   }
-  .inframe{
-      max-width: 150px;
+  
+  .player__controls {
+    position: relative;
+    gap: 30px;
+    height: 54px;
+    padding: 0 20px;
+  }
+
+  .player__screen-button {
+    top: calc(50% - 52.5px);
+    left: calc(50% - 25px);
+
+    width: 50px;
+    height: 50px;
+
+    background: transparent url("../museum-adaptive/assets/svg/player/screen-button4.svg") no-repeat;
+  }
+
+  .player__volume {
+    flex-basis: 200px;
+  }
+
+  .player__play {
+    width: 14px;
+    height: 18px;
+
+    background: transparent url("../museum-adaptive/assets/svg/player/play4.svg");
+  }
+
+  .player__mute {
+    width: 18px;
+    height: 14px;
+    background: transparent url("../museum-adaptive/assets/svg/player/mute4.svg");
+  }
+
+  .player__fullscreen {
+    width: 18px;
+    height: 18px;
+
+    background: transparent url("../museum-adaptive/assets/svg/player/fullscreen4.svg");
+  }
+
+  .player__range::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+  }
+
+  .playlist {
+    row-gap: 40px;
+  }
+  .playlist__slider {
+    gap: 20px;
+  }
+  .playlist__preview:nth-child(3) {
+    display: none;
+  }
+  .playlist__item {
+    width: 8px;
+    height: 8px;
+  }
+
+  .playlist__arrow-left,
+  .playlist__arrow-right {
+    height: 7px;
+    width: 8px;
+
+    border: none;
+  }
+
+  .playlist__arrow-left {
+    background: transparent url("../museum-adaptive/assets/svg/player/arrow-left.svg") no-repeat left;
+  }
+
+  .playlist__arrow-right {
+    background: transparent url("../museum-adaptive/assets/svg/player/arrow-right.svg") no-repeat right;
   }
 
   /* GALLERY */
