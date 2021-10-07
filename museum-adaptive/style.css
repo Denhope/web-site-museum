@@ -2441,6 +2441,16 @@ option {
     .visiting-text{
         font-weight: 200;
     }
+    .squares{
+      padding: 14px 0 18px 2px;
+      width: 160px;  
+    }
+
+    .square {
+        width: 12px;
+        height: 12px;
+    }
+    
 
     
   /* EXPLORE */
@@ -2714,7 +2724,7 @@ option {
 
   .control {
     /* position: relative; */
-    bottom: 0;
+    /* bottom: 0; */
     z-index: 0;
 
     justify-content: center;
@@ -2722,6 +2732,19 @@ option {
     height: 100px;
     padding: 0;
   }
+  .squares {
+    
+    padding: 12px 0 20px 2px;
+    padding-top: 7px;
+    margin-left: -5px;
+      
+  }
+
+  .number-wrapper {
+  
+  }
+  
+      bottom: 1;
 
   /* Tour */
   .visiting-container{
@@ -2950,6 +2973,54 @@ option {
   .explore-img{
     margin-bottom: 0;
   }
+
+  .squares{
+    padding-top: 0px;
+    margin-left: -5px;
+  }
+  .number-wrapper {
+    padding-left: 2px;
+    margin-right: 0;
+  }
+
+  .arrow-wrapper {
+    margin-left: 0;
+  }
+  .square{
+    margin: 4px;
+    width: 7px;
+    height: 7px;
+  }
+  .arrow-left {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 8px;
+  }
+  .arrow-right {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 8px;
+  }
+
+  .active-number {
+    margin-right: 20px;
+  }
+
+  .number-slider {
+    font-size: 16px;
+  }
+
+  
+  .active-number::after {
+    height: 15px;
+    width: 1px;
+    top: 5px;
+    right: -10px;
+  }
+
+  
     
 
   /* VIDEO */
