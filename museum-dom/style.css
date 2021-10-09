@@ -779,7 +779,7 @@ video[poster]{
     width: 220px;
     height: 220px;
   
-    background: transparent url("../museum-adaptive/assets/svg/player/screen-button.svg");
+    background: transparent url("assets/svg/player/screen-button.svg");
     border: none;
     cursor: pointer;
   }
@@ -802,7 +802,7 @@ video[poster]{
     flex-shrink: 0;
   
     border: none;
-    background: transparent url("/museum-adaptive/assets/svg/player/play.svg");
+    background: transparent url("assets/svg/player/play.svg");
   }
   
   .player__range {
@@ -841,7 +841,7 @@ video[poster]{
     height: 31px;
     flex-shrink: 0;
   
-    background: transparent url("../museum-adaptive/assets/svg/player/mute.svg");
+    background: transparent url("assets/svg/player/mute.svg");
     border: 0;
   }
   
@@ -850,7 +850,7 @@ video[poster]{
     height: 35px;
     flex-shrink: 0;
   
-    background: transparent url("../museum-adaptive/assets/svg/player/fullscreen.svg");
+    background: transparent url("assets/svg/player/fullscreen.svg");
     border: none;
   }
   
@@ -978,21 +978,21 @@ video[poster]{
 }
 
 .playlist__arrow-left {
-  background: transparent url("../museum-adaptive/assets/svg/player/arrow-left.svg") no-repeat;
+  background: transparent url("assets/svg/player/arrow-left.svg") no-repeat;
 }
 
 .playlist__arrow-right {
-  background: transparent url("../museum-adaptive/assets/svg/player/arrow-right.svg") no-repeat;
+  background: transparent url("assets/svg/player/arrow-right.svg") no-repeat;
 }
 
 .playlist__arrow-left:hover {
   cursor: pointer;
-  background: transparent url("../museum-adaptive/assets/svg/player/arrow-left-active.svg") no-repeat;
+  background: transparent url("assets/svg/player/arrow-left-active.svg") no-repeat;
 }
 
 .playlist__arrow-right:hover {
   cursor: pointer;
-  background: transparent url("../museum-adaptive/assets/svg/player/arrow-right-active.svg") no-repeat;
+  background: transparent url("assets/svg/player/arrow-right-active.svg") no-repeat;
 }
 
 .playlist__item:hover {
@@ -1078,21 +1078,21 @@ video[poster]{
   }
   
   .playlist__arrow-left {
-    background: transparent url("../assets/svg/player/arrow-left.svg") no-repeat;
+    background: transparent url("assets/svg/player/arrow-left.svg") no-repeat;
   }
   
   .playlist__arrow-right {
-    background: transparent url("../assets/svg/player/arrow-right.svg") no-repeat;
+    background: transparent url("assets/svg/player/arrow-right.svg") no-repeat;
   }
   
   .playlist__arrow-left:hover {
     cursor: pointer;
-    background: transparent url("../assets/svg/player/arrow-left-active.svg") no-repeat;
+    background: transparent url("assets/svg/player/arrow-left-active.svg") no-repeat;
   }
   
   .playlist__arrow-right:hover {
     cursor: pointer;
-    background: transparent url("../assets/svg/player/arrow-right-active.svg") no-repeat;
+    background: transparent url("assets/svg/player/arrow-right-active.svg") no-repeat;
   }
   
   .playlist__item:hover {
@@ -2523,7 +2523,7 @@ option {
         left: calc(50% - 76px);
         width: 152px;
         height: 152px;
-        background: transparent url("../museum-adaptive/assets/svg/player/screen-button2.svg") no-repeat;
+        background: transparent url("assets/svg/player/screen-button2.svg") no-repeat;
     }
     
     .player__range {
@@ -2546,14 +2546,14 @@ option {
       width: 26px;
         height: 20px;
     
-        background: transparent url("../museum-adaptive/assets/svg/player/mute2.svg");
+        background: transparent url("assets/svg/player/mute2.svg");
     }
     
     .player__fullscreen {
         width: 26px;
         height: 26px;
     
-        background: transparent url("../museum-adaptive/assets/svg/player/fullscreen2.svg");
+        background: transparent url("assets/svg/player/fullscreen2.svg");
     }
     
     .player__range::-webkit-slider-thumb {
@@ -2801,7 +2801,7 @@ option {
     left: calc(50% - 40px);
     width: 80px;
     height: 80px;
-    background: transparent url("../museum-adaptive/assets/svg/player/screen-button3.svg") no-repeat;
+    background: transparent url("assets/svg/player/screen-button3.svg") no-repeat;
   }
 
   .player__controls {
@@ -2954,7 +2954,7 @@ option {
     margin-top: 0;
     font-size: 16px;
     line-height: 18px;
-    background: transparent url("../museum-adaptive/assets/svg/logo2.svg") no-repeat left top;
+    background: transparent url("assets/svg/logo2.svg") no-repeat left top;
 
   }
   
@@ -3053,7 +3053,7 @@ option {
     width: 50px;
     height: 50px;
 
-    background: transparent url("../museum-adaptive/assets/svg/player/screen-button4.svg") no-repeat;
+    background: transparent url("assets/svg/player/screen-button4.svg") no-repeat;
   }
 
   .player__volume {
@@ -3064,20 +3064,20 @@ option {
     width: 14px;
     height: 18px;
 
-    background: transparent url("../museum-adaptive/assets/svg/player/play4.svg");
+    background: transparent url("assets/svg/player/play4.svg");
   }
 
   .player__mute {
     width: 18px;
     height: 14px;
-    background: transparent url("../museum-adaptive/assets/svg/player/mute4.svg");
+    background: transparent url("assets/svg/player/mute4.svg");
   }
 
   .player__fullscreen {
     width: 18px;
     height: 18px;
 
-    background: transparent url("../museum-adaptive/assets/svg/player/fullscreen4.svg");
+    background: transparent url("assets/svg/player/fullscreen4.svg");
   }
 
   .player__range::-webkit-slider-thumb {
@@ -3108,11 +3108,11 @@ option {
   }
 
   .playlist__arrow-left {
-    background: transparent url("../museum-adaptive/assets/svg/player/arrow-left.svg") no-repeat left;
+    background: transparent url("assets/svg/player/arrow-left.svg") no-repeat left;
   }
 
   .playlist__arrow-right {
-    background: transparent url("../museum-adaptive/assets/svg/player/arrow-right.svg") no-repeat right;
+    background: transparent url("assets/svg/player/arrow-right.svg") no-repeat right;
   }
 
   /* GALLERY */
