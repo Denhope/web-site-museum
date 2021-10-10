@@ -371,111 +371,130 @@ p {
     margin-left: auto;
 }
 
-.slider-shadow {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
-}
-
-.item-slider {
-    width: 100%;
-    height: auto;    
-}
-
-/* .item-slider:after {
-	content: "";
-	display: block;    	  
-	position: absolute;
-	top: 0;
-    right: 0;
-    z-index: 11;
-    width: 1000px;
-    height: 750px;  
-	background: transparent;
-	background-image: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
-	opacity: 1;
+/* .slider-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+  opacity: 1;
 } */
 
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-bg{
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+
+
+.item-slider {
+  display: none;
+  width: 100%;
+  height: auto; 
+  animation: .5s ease-in-out;  
+  top: 0;
+  right: 0;    
+}
+.item-slider:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: transparent;
+  background-image: linear-gradient(
+90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+  opacity: 1;
+}
+
+
+
 .active-slider {
-    display: block;
+  display: block;
 }
 
 .next-slider {
-    display: block;
-    position: absolute;
-    top: 0;
-    
+  display: block;
+  position: absolute;
+  top: 0;    
 }
 
 .control {
-    position: absolute;
-    bottom: -60px;
-    right: 0;
-    z-index: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-sizing: border-box;
-    width: 600px;
-    height: 120px;
-    padding: 40px 74px;
-    background-color: var(--bg-dark);   
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 600px;
+  height: 120px;
+  padding: 40px 74px;
+  background-color: var(--bg-dark);   
     
 }
 
 .number-wrapper {
-    display: flex;
-    margin-right: 55px;
-    height: 40px;
-    width: 74px;
+  display: flex;
+  margin-right: 55px;
+  height: 40px;
+  width: 74px;
 }
 
 .number-slider {
     
-    margin-right: 26px;
-    position: relative;
+  margin-right: 26px;
+  position: relative;
 
-    font-family: 'Roboto', sans-serif;
-    font-size: var(--font4);
-    font-weight: 400;
-    line-height: 1.8;
-    color:#ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--font4);
+  font-weight: 400;
+  line-height: 1.8;
+  color:#ffffff;
 }
 
 .active-number::after {
-    
-    display: block;
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 20px;
-
-    top: 11px;
-    right: -14px;
-
-    background-color: #ffffff;
+  
+  display: block;
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  top: 11px;
+  right: -14px;
+  background-color: #ffffff;
 }
 
 .squares {
     
-    padding: 12px 0;
-    display: flex;
-    width: 180px;
-    height: 16px;
-    justify-content: space-between;
+  padding: 12px 0;
+  display: flex;
+  width: 180px;
+  height: 16px;
+  justify-content: space-between;
 }
 
 .square {
-    margin-right: -2px;
-    width: 16px;    
-    height: 16px;
+  margin-right: -2px;
+  width: 16px;    
+  height: 16px;
 
-    background-color: #ffffff;
-    cursor: pointer;
+  background-color: #ffffff;
+  cursor: pointer;
 
-    transition: background-color .6s linear;
+  transition: background-color .6s linear;
 
 }
 
@@ -488,50 +507,67 @@ p {
 }
 
 .arrow-wrapper {
-    padding: 16px 0;
-    display: flex;
-    margin-left: 50px;
-    
+  padding: 16px 0;
+  display: flex;
+  margin-left: 50px;
+  
 }
 
 .arrow {
-    margin: 0 10px;
-    
-    width: 30px;
-    height: 8px;
-    color: #ffffff;
-    cursor: pointer;
-    transition: filter .6s linear;
+  margin: 0 10px;    
+  width: 30px;
+  height: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: filter .6s linear;
 }
 
 .arrow:hover {
-    filter: invert(52%) sepia(34%) saturate(351%) hue-rotate(356deg) brightness(97%) contrast(87%);
+  filter: invert(52%) sepia(34%) saturate(351%) hue-rotate(356deg) brightness(97%) contrast(87%);
 }
 
 .arrow-left {
-    background-image: url("assets/img/welcome-slider/arrow-left.svg");
+  background-image: url("assets/img/welcome-slider/arrow-left.svg");
 }
 
 .arrow-right {
-    background-image: url("assets/img/welcome-slider/arrow-right.svg");
+  background-image: url("assets/img/welcome-slider/arrow-right.svg");
 }
 
 .to-left {
-    animation-name: left;
+  animation-name: left;
 }
 
 .to-right {
-    animation-name: right;
-    animation-direction: reverse;
+  animation-name: right;
+  animation-direction: reverse;
 }
 
 .from-left {
-    animation-name: left;
-    animation-direction: reverse;
+  animation-name: left;
+  animation-direction: reverse;
 }
 
 .from-right {
-    animation-name: right;
+  animation-name: right;
+}
+
+@keyframes right {
+  from {
+      left: 100%;
+  }
+  to {
+      left: 0;
+  }
+}
+
+@keyframes left {
+  from {
+      left: 0;
+  }
+  to {
+      left: -100%;
+  }
 }
 
 
