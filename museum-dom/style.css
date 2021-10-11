@@ -789,7 +789,7 @@ p {
   z-index: 1000;
   cursor: ew-resize;
 
-  
+
 
   transform: translateY(-50%); 
 }
@@ -1522,7 +1522,7 @@ video[poster]{
     line-height: 1.2;
     color:#000000;
 
-    background-color:var(--bg-light);
+    background-color:var(--white);
     border: none;
 
     transition: color .5s linear;
