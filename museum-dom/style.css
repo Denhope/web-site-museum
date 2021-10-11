@@ -419,9 +419,15 @@ opacity: 1;
 }
 
 .item-slider img {
+<<<<<<< HEAD
 display: block;
 width: 100%;
 height: auto;
+=======
+  display: block;
+  width: 100%;
+  height: auto;
+>>>>>>> f0d020e5b64e468d3550dbe3986942cce06c9aad
 }
 
 
