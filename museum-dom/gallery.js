@@ -20,3 +20,26 @@ for (let i = 0; i < 15; i++) {
     img.alt = `galery${pictureArray[i]}`;
     pictureInnerContainer.append(img);
 }
+
+const pictures = document.querySelectorAll('.gallery-img');
+
+
+window.addEventListener("scroll", (e) => {
+    
+    for (let i = 0; i < pictures.length; i++) {
+        let box = pictures[i].getBoundingClientRect();
+        let height = box.top + scrollY;
+        if (window.scrollY + window.innerHeight > height) {
+            setTimeout(() => {
+                pictures[i].classList.add('img-visional');
+            }, 500 );
+        }
+
+        if (window.scrollY + window.innerHeight < height) {
+            setTimeout(() => {
+                pictures[i].classList.remove('img-visional');
+            }, 500 );
+        }
+    }
+
+});
