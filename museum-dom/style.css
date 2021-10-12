@@ -587,9 +587,9 @@ to {
   width: 100%;
 }
 
-.visiting-section {
+/* .visiting-section {
   /* padding-bottom: 63px; */
-}
+/* } */ */
 
 
 .visiting-cards {
@@ -1360,9 +1360,9 @@ background-color: #710707;
 }
 
 
-.section-title-gallery {
+/* .section-title-gallery { */
   /* margin-bottom: 85px; */
-}
+/* } */
 .picture-inner{
   margin-top: 75px;
   height: 1960px;
@@ -1393,9 +1393,9 @@ background-color: #710707;
 
 /* Tickets */
 
-.tickets-section {
+/* .tickets-section { */
   
-}
+/* } */
 
 .tickets-container {
   width: 100%;
@@ -1408,9 +1408,9 @@ background-color: #710707;
 
 }
 
-.tickets-form{
+/* .tickets-form{
 
-}
+} */
 .tickets-inner{
   display: flex;
   flex-direction: row;
@@ -2293,10 +2293,10 @@ option {
   gap: 10px;
 }
 
-.contacts-content {
+/* .contacts-content {
   
   
-}
+} */
 
 /* .contacts-title {
   margin-bottom: 107px;
@@ -3091,9 +3091,9 @@ option {
     
 }
 
-.number-wrapper {
+/* .number-wrapper {
 
-}
+} */
 
 
 /* Tour */
@@ -3212,9 +3212,9 @@ option {
 
 
 /* GALLERY */
-.picture-container {
+/* .picture-container {
   
-}
+} */
 .picture-inner {
   margin-top: 40px;
   height: 1080px;
