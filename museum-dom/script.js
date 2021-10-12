@@ -75,3 +75,55 @@ squaresSlider.forEach( function (item, i) {
     }
   });
 });
+
+const swipedetect = (el) => {
+  
+  
+	let surface = el;
+	let startX = 0;
+	let startY = 0;
+	let distX = 0;
+	let distY = 0;
+	let startTime = 0;
+	let elapsedTime = 0;
+
+	let threshold = 150;
+	let restraint = 100;
+	let allowedTime = 1000;
+
+	surface.addEventListener('mousedown', function(e){
+    
+		startX = e.pageX;
+		startY = e.pageY;
+		startTime = new Date().getTime();
+		e.preventDefault();
+	});
+
+	surface.addEventListener('mouseup', function(e){
+    
+		distX = e.pageX - startX;
+		distY = e.pageY - startY;
+		elapsedTime = new Date().getTime() - startTime;
+		if (elapsedTime <= allowedTime){
+			if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint){
+				if ((distX > 0)) {
+					if (isEnabled) {
+						previousItem(currentItem);
+					}
+				} else {
+					if (isEnabled) {
+						nextItem(currentItem);
+					}
+				}
+			}
+		}
+		e.preventDefault();
+	});
+
+	
+}
+
+let el = document.querySelector('.slider-container');
+swipedetect(el);
+
+

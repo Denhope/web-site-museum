@@ -1358,8 +1358,7 @@ background-color: #710707;
 .picture-inner{
   margin-top: 75px;
   height: 1960px;
-
-overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .picture-inner-container {
@@ -1368,6 +1367,7 @@ overflow-y: hidden;
   column-gap: 36px;
   column-fill: balance;
 }
+
 .img-visional {
   opacity: 1;
   transform: translateY(0) scale(1);
