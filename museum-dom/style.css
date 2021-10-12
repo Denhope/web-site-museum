@@ -2471,7 +2471,6 @@ option {
   }
 
 /*HEADER*/
-<<<<<<< HEAD
     .header-container{
         position: relative;
         height: 130px;
@@ -2693,14 +2692,8 @@ option {
      
     
     .picture-container{
-        padding-top: 60px;
+      padding-top: 60px;
     }
-=======
-  .header-container{
-      position: relative;
-      height: 130px;
-  }
->>>>>>> gh-pages
 
 
   header .navigation{
