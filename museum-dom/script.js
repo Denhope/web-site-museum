@@ -179,7 +179,7 @@ const map = new mapboxgl.Map({
 map.addControl(new mapboxgl.NavigationControl());
 
 new mapboxgl.Marker({
-	color: "gray",
+	color: "black",
 })
 	.setLngLat([2.3364, 48.86091])
 	.addTo(map);
