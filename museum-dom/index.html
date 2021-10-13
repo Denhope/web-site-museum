@@ -233,7 +233,7 @@
                     </div>
 
                     <div class="playlist">
-                        <div class="playlist__slider">
+                        <!-- <div class="playlist__slider">
                           <div class="playlist__preview">
                             <img src="assets/img/player/preview1.webp" data-video="aWmJ5DgyWPI">
                           </div>
@@ -243,8 +243,42 @@
                           <div class="playlist__preview">
                             <img src="assets/img/player/preview3.webp" data-video="NOhDysLnTvY">
                           </div>
-                        </div>
-                        <ul class="playlist__items">
+                        </div> -->
+
+                        <div class="slider__container">
+                            <div class="slider__row">
+                              <div class="slide-video">
+                                <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/zp1BXPX8jcU?controls=0?modestbranding=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreenloading="lazy"></iframe>
+                              </div>
+                              <div class="slide-video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Vi5D6FKhRmo?controls=0?modestbranding=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                              </div>
+                              <div class="slide-video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/NOhDysLnTvY?controls=0?modestbranding=1" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                              </div>
+                              <div class="slide-video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/aWmJ5DgyWPI?controls=0?modestbranding=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                              </div>
+                              <div class="slide-video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2OR0OCr6uRE?controls=0?modestbranding=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                              </div>
+                            </div>
+                          </div>
+
+                        <div class="slider__controls">
+                            <button class="video-btn-left"></button>
+                            <div class="controls__video-dots">
+                              <div class="video-dot"></div>
+                              <div class="video-dot"></div>
+                              <div class="video-dot"></div>
+                              <div class="video-dot"></div>
+                              <div class="video-dot"></div>
+                            </div>
+                            <button class="video-btn-right"></button>
+                          </div>
+
+
+                        <!-- <div class="playlist__items_controls">
                           <li class="playlist__arrow">
                             <button class="playlist__arrow-left"></button>
                           </li>
@@ -256,12 +290,12 @@
                           <li class="playlist__arrow">
                             <button class="playlist__arrow-right"></button>
                           </li>
-                        </ul>
+                        </div> -->
                     </div>
     
                    
     
-                    </div>
+                   
                     
                 </div>               
                 
@@ -625,6 +659,7 @@
 
     </footer>
     <!-- <script>src="slider.js"</script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="script.js"></script>
     <script src="gallery.js"></script>
     <script src="form.js"></script>

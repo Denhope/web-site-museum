@@ -205,3 +205,26 @@ new mapboxgl.Marker({
 	.addTo(map);
 
 
+  /*VIDEO-slider */
+
+  
+
+  let sliderVideo = tns({
+    container: ".slider__row",
+    items: 3,
+    slideBy: 1,
+    gutter: 42,
+    mouseDrag: true,
+    navContainer: ".controls__video-dots",
+    prevButton: ".video-btn-left",
+    nextButton: ".video-btn-right",
+    preventActionWhenRunning: true,
+    navAsThumbnails: true,
+    
+  });
+  
+ 
+  
+  // change main video
+  
+  
