@@ -587,9 +587,6 @@ to {
   width: 100%;
 }
 
-/* .visiting-section {
-  /* padding-bottom: 63px; */
-/* } */ */
 
 
 .visiting-cards {
@@ -601,6 +598,7 @@ to {
   padding-top: 75px;
   line-height: 0;
 }
+
 .visiting-item {
   display: block;
   text-decoration: none;
@@ -2574,10 +2572,7 @@ option {
     }
 
     .visiting-cards {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      
       gap: 60px 108px;
       padding-top: 60px;
       justify-content: center;
