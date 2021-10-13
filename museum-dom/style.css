@@ -2574,9 +2574,13 @@ option {
     }
 
     .visiting-cards {
-        gap: 60px 108px;
-        padding-top: 60px;
-        justify-content: center;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 60px 108px;
+      padding-top: 60px;
+      justify-content: center;
     }
     .visiting-img{
         width: 330px;
