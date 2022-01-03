@@ -1042,14 +1042,6 @@ row-gap: 40px;
 width: 100%;
 }
 
-/* .playlist__slider {
-display: flex;
-gap: 42px;
-flex-direction: row;
-justify-content: space-between;
-flex-wrap: nowrap;
-} */
-
 .slider__row{
   display: flex;
   gap: 42px;
@@ -1181,7 +1173,7 @@ font-size: 0;
   gap: 42px;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 /* .playlist__preview {
