@@ -1168,7 +1168,13 @@ font-size: 0;
   width: 100%;
 }
 
-
+.playlist__slider {
+  display: flex;
+  gap: 42px;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 /* .playlist__preview {
   position: relative;
