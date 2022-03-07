@@ -1053,7 +1053,7 @@ iframe {
   height: 100%;
 }
 
-.slider__controls./*playlist__items*/ {
+.slider__controls {
   display: flex;
   align-self: center;
   gap: 20px;
@@ -1061,7 +1061,7 @@ iframe {
   font-size: 0;
 }
 
-.video-dot/*playlist__item*/ {
+.video-dot {
   display: block;
   width: 12px;
   height: 12px;
